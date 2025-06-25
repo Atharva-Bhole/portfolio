@@ -2,49 +2,51 @@ import { useState } from "react";
 
 export default function ExperienceSection() {
   const experiences = [
-    {
-      company: "Tech Solutions Inc.",
-      role: "Full Stack Developer",
-      duration: "2023 - Present",
-      description:
-        "Developed scalable web applications using React, Node.js, and cloud services. Led a team of 4 engineers to deliver client projects on time.",
-      logo: "https://picsum.photos/200/200?random=1",
-      tech: ["React", "Node.js", "AWS", "MongoDB"],
-      highlights: [
-        "Architected and deployed a microservices-based platform on AWS.",
-        "Mentored junior developers and conducted code reviews.",
-        "Integrated CI/CD pipelines for faster deployments.",
-      ],
-    },
-    {
-      company: "InnovateX Labs",
-      role: "Frontend Developer",
-      duration: "2021 - 2023",
-      description:
-        "Built modern UI components and improved performance for SaaS products. Collaborated closely with designers and backend teams.",
-      logo: "https://picsum.photos/200/200?random=2",
-      tech: ["React", "Redux", "Sass"],
-      highlights: [
-        "Redesigned dashboard UI for better usability.",
-        "Reduced bundle size by 30% through code splitting.",
-        "Worked with QA to automate UI testing.",
-      ],
-    },
-    {
-      company: "Freelance",
-      role: "Web Developer",
-      duration: "2019 - 2021",
-      description:
-        "Worked with startups and small businesses to create responsive websites and e-commerce solutions.",
-      logo: "https://picsum.photos/200/200?random=3",
-      tech: ["HTML", "CSS", "JavaScript", "WordPress"],
-      highlights: [
-        "Delivered 10+ client projects with 100% satisfaction.",
-        "Customized WordPress themes and plugins.",
-        "Provided SEO and analytics setup for clients.",
-      ],
-    },
-  ];
+  {
+    company: "CrackOffCampus (Freelance)",
+    role: "Web Developer",
+    duration: "April 2025 – June 2025",
+    description:
+      "Developed and optimized the official CrackOffCampus website backend, ensuring high availability and low latency under heavy user loads.",
+    logo: "https://picsum.photos/200/200?random=1",
+    tech: ["Node.js", "Express", "PostgreSQL", "Rate Limiter", "NGINX"],
+    highlights: [
+      "Reduced buffering time by 40% using response compression and smart caching.",
+      "Implemented rate-limiting and basic DDoS mitigation techniques.",
+      "Used load balancing to distribute high traffic across multiple server instances.",
+      "Designed an isolated PostgreSQL-based admin dashboard system."
+    ],
+  },
+  {
+    company: "Arohi Software",
+    role: "Full-Stack Developer Intern",
+    duration: "Aug 2024 – Nov 2024",
+    description:
+      "Built a cloud-based dairy inventory management platform using Flask and Aiven (AWS), focusing on robust APIs and dashboard analytics.",
+    logo: "https://picsum.photos/200/200?random=2",
+    tech: ["Flask", "Python", "PostgreSQL", "AWS (Aiven)", "Chart.js"],
+    highlights: [
+      "Reduced database query overhead by 30% through optimized models and indexing.",
+      "Led the design and development of core RESTful APIs and testing flows.",
+      "Delivered real-time dashboards to track milk collection and dairy expenses.",
+    ],
+  },
+  {
+    company: "Cognifyz Technologies",
+    role: "Machine Learning Intern",
+    duration: "Jun 2024 – Jul 2024",
+    description:
+      "Worked on a restaurant recommendation system leveraging classification and ranking models using scikit-learn.",
+    logo: "https://picsum.photos/200/200?random=3",
+    tech: ["Python", "scikit-learn", "Pandas", "Matplotlib"],
+    highlights: [
+      "Built a recommendation system with 89% accuracy using collaborative filtering.",
+      "Applied decision trees and ensemble learning for restaurant classification.",
+      "Conducted EDA and preprocessing to improve model robustness and performance."
+    ],
+  }
+];
+
 
   const [openIdx, setOpenIdx] = useState(null);
 
