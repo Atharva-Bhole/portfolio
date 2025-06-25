@@ -184,6 +184,13 @@ Designed for hospital integration, reducing response times and enabling AI-drive
 
 export default function ProjectsSection() {
 	const [openIdx, setOpenIdx] = useState(null);
+	const detailsRef = React.useRef(null);
+
+	React.useEffect(() => {
+		if (openIdx !== null && detailsRef.current) {
+			detailsRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+		}
+	}, [openIdx]);
 
 	// Helper to chunk projects into rows of 3 (for lg:grid-cols-3)
 	const chunked = [];
@@ -468,7 +475,7 @@ export default function ProjectsSection() {
 				{openIdx !== null && (() => {
 					const project = projects[openIdx];
 					return (
-						<div className="w-full flex justify-center">
+						<div className="w-full flex justify-center" ref={detailsRef}>
 							<div
 								className="bg-[#222] rounded-2xl shadow-2xl overflow-hidden flex flex-col group transition-all duration-500 max-w-4xl w-full z-20 mt-2 mb-6 animate-fade-in-expand"
 								style={{ minHeight: "380px" }}

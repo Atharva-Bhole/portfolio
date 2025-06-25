@@ -8,7 +8,7 @@ export default function ExperienceSection() {
     duration: "April 2025 – June 2025",
     description:
       "Developed and optimized the official CrackOffCampus website backend, ensuring high availability and low latency under heavy user loads.",
-    logo: "https://picsum.photos/200/200?random=1",
+    logo: "/images/crackoffcampus.png",
     tech: ["Node.js", "Express", "PostgreSQL", "Rate Limiter", "NGINX"],
     highlights: [
       "Reduced buffering time by 40% using response compression and smart caching.",
@@ -23,7 +23,7 @@ export default function ExperienceSection() {
     duration: "Aug 2024 – Nov 2024",
     description:
       "Built a cloud-based dairy inventory management platform using Flask and Aiven (AWS), focusing on robust APIs and dashboard analytics.",
-    logo: "https://picsum.photos/200/200?random=2",
+    logo: "/images/arohisoftware.jpeg",
     tech: ["Flask", "Python", "PostgreSQL", "AWS (Aiven)", "Chart.js"],
     highlights: [
       "Reduced database query overhead by 30% through optimized models and indexing.",
@@ -37,7 +37,7 @@ export default function ExperienceSection() {
     duration: "Jun 2024 – Jul 2024",
     description:
       "Worked on a restaurant recommendation system leveraging classification and ranking models using scikit-learn.",
-    logo: "https://picsum.photos/200/200?random=3",
+    logo: "/images/cognifyz.jpeg",
     tech: ["Python", "scikit-learn", "Pandas", "Matplotlib"],
     highlights: [
       "Built a recommendation system with 89% accuracy using collaborative filtering.",
