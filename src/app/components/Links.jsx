@@ -18,7 +18,7 @@ const links = [
     name: "LeetCode",
     url: "https://leetcode.com/u/Atharva_Bhole/",
     icon: (
-      <Image src="/leetcode.svg" width={32} height={32} alt="LeetCode" className="bg-[#ADB7BE] rounded-md" />
+      <Image src="/leetcode.svg" width={32} height={32} alt="LeetCode" className="bg-[#ADB7BE] hover:bg-[#64ffda] duration-300 transition-colors ease-in-out rounded-md" />
     )
   },
 ];
@@ -27,14 +27,14 @@ export default function LinksSection() {
   return (
     <section className="py-12 bg-[#181818]">
       <h2 className="text-3xl font-bold mb-10 text-center text-[#64ffda]">Find Me Online</h2>
-      <div className="flex flex-wrap justify-center gap-8 max-w-3xl mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-8 max-w-3xl mx-auto px-4 hover:text-[#64ffda] transition-colors duration-300">
         {links.map((link, idx) => (
           <a
             key={idx}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2 text-[#ADB7BE] hover:text-[#64ffda] transition"
+            className="flex flex-col items-center gap-2 text-[#ADB7BE] hover:text-[#64ffda]  transition"
             aria-label={link.name}
           >
             {link.icon}
